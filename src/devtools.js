@@ -23,12 +23,19 @@ function loadNotes(panelWindow) {
   chrome.devtools.inspectedWindow.eval(
     'window.location.href',
     function(result, isException) {
+      
       if (isException) {
         console.error(isException);
         return;
       }
-      const url = new URL(result);
-      panelWindow.load(url.toString());
+      
+      const url = new URL(result)
+        .toString()
+        .split("?")[0]
+        .split("#")[0];
+        
+      panelWindow.load(url);
+      
     }
   );
 }
