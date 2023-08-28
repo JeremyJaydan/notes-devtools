@@ -1,6 +1,6 @@
 {
   "name": "Notes (devtools)",
-  "description": "Notes tab for devtools",
+  "description": "A simple chrome extension to add a 'Notes' tab to devtools.",
   "author": "JeremyJaydan",
   "version": "1.0",
   "manifest_version": 3,
