@@ -1,5 +1,5 @@
 {
-  "name": "Dev Notes",
+  "name": "Notes (devtools)",
   "description": "Notes tab for devtools",
   "author": "JeremyJaydan",
   "version": "1.0",
@@ -7,5 +7,8 @@
   "devtools_page": "src/devtools.html",
   "permissions": [
     "storage"
-  ]
+  ],
+  "icons": {
+    "64": "icon.png"
+  }
 }
